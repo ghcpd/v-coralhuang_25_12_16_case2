@@ -5,78 +5,73 @@ The baseline source code has already been provided to you.
 
 ### Baseline Functionality (Already Implemented)
 
-* Pages:
-
-  * Home
-  * About
-  * Courses
-  * Contact
+* Pages: Home, About, Courses, Contact
 * Navigation bar for page switching
-* Courses page shows a simple list of courses (title and price only)
-* Local mock data, no backend
-* Minimal and utilitarian UI styling
+* Courses page shows a simple list of courses (title and price)
+* Local mock data embedded in App.jsx
+* Clean and minimal UI styling
+* All components in a single App.jsx file for simplicity
 
 The baseline application **runs correctly** and must **not be rewritten from scratch**.
 
 ---
 
-## Your Task: Improve the Existing Application
+## Your Task: Add Improvements
 
-You must **extend and improve the provided baseline code**, both functionally and visually.
+You must **extend the provided baseline code** with focused improvements.
 
 ---
 
 ### Required Feature Improvements
 
-#### 1. Course Detail / Landing Page
+#### 1. Course Detail Pages
 
-* Each course must have its own detail page
-* Display:
-
+* Add a description field to each course in the courses array
+* Create a detail route for each course at `/courses/:id`
+* Display on detail page:
   * Course title
   * Full description
   * Price
-* Add a “Buy Course” button
-  (mock behavior only; no real payment integration required)
+* Add a "Buy Course" button on the detail page (mock behavior with alert)
+* Add navigation from course cards to detail pages
 
 ---
 
-#### 2. Course Feedback Feature
+#### 2. Course Feedback System
 
-* Add a feedback section or a dedicated page per course
+* Add a feedback section on each course detail page
 * Users must be able to submit:
-
-  * Name (or anonymous)
-  * Rating (1–5)
+  * Name (optional, default to "Anonymous")
+  * Rating (1-5 stars)
   * Comment
-* Newly submitted feedback must appear immediately in the UI
+* Store feedback in localStorage per course
+* Display submitted feedback immediately below the form
+* Show all previous feedback for that course
 
 ---
 
-#### 3. UI & Visual Improvements (Mandatory)
+#### 3. UI Enhancements (Required)
 
-The improved application must be **visually cleaner and more polished** than the baseline.
+The improved application must be **visually polished and professional**:
 
-Minimum expectations:
-
-* Consistent layout, spacing, and typography across all pages
-* Reusable UI components where appropriate (e.g. course cards, buttons, sections)
-* Clear visual hierarchy (headings, content blocks, actions)
-* Basic responsive behavior:
-
-  * Usable on both desktop and mobile screen widths
-* The UI should look **intentionally designed**, not default or placeholder-level
-
-You are **not required to create a custom design system**, but the result must be clearly more aesthetically refined than the baseline.
+* Add attractive hover effects and transitions to course cards
+* Use a cohesive color scheme (e.g., blue accents for interactive elements)
+* Add shadows and depth to cards
+* Improve typography hierarchy (font sizes, weights, spacing)
+* Add icons or visual indicators where appropriate
+* Ensure fully responsive layout on mobile screens
+* Polish all pages (Home, About, Courses, Contact, Course Detail)
+* Make buttons and interactive elements visually distinct
 
 ---
 
 ## Constraints
 
-* Use React.js
-* Use React Router for navigation
+* You may split code into separate components if it improves clarity
+* Use React.js with React Router for navigation
 * Do not remove or break existing pages
-* No backend required (local state or mock data is sufficient)
+* Use localStorage for feedback persistence (no backend required)
+* Focus on clean, maintainable code structure
 
 ---
 
@@ -84,30 +79,11 @@ You are **not required to create a custom design system**, but the result must b
 
 You must submit:
 
-* Updated React source code based on the provided baseline
+* Updated React source code with all improvements
+* Enhanced styles.css with professional UI styling
 * A **README.md** that includes:
-
   * How to install dependencies
   * How to run the project locally
-  * A short summary of the improvements you made
-* The README must be sufficient for a reviewer to run and verify the application
+  * A clear summary of improvements made
+  * Brief explanation of how feedback works
 
----
-
-## Evaluation Criteria
-
-**Pass if:**
-
-* Improvements are clearly built on top of the baseline code
-* Course detail, purchase mock, and feedback features work correctly
-* UI is clearly more polished, consistent, and usable than the baseline
-* Code structure remains clear and maintainable
-* README allows the project to be run without guesswork
-
-**Fail if:**
-
-* Baseline functionality is broken
-* The application is rewritten instead of incrementally improved
-* UI remains essentially unchanged or visually careless
-* Features are described but not actually implemented
-* README is missing or insufficient
