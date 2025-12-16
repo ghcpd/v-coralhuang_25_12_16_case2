@@ -1,0 +1,113 @@
+Prompt
+
+You are given a **working baseline React.js application** for an online courses website.
+The baseline source code has already been provided to you.
+
+### Baseline Functionality (Already Implemented)
+
+* Pages:
+
+  * Home
+  * About
+  * Courses
+  * Contact
+* Navigation bar for page switching
+* Courses page shows a simple list of courses (title and price only)
+* Local mock data, no backend
+* Minimal and utilitarian UI styling
+
+The baseline application **runs correctly** and must **not be rewritten from scratch**.
+
+---
+
+## Your Task: Improve the Existing Application
+
+You must **extend and improve the provided baseline code**, both functionally and visually.
+
+---
+
+### Required Feature Improvements
+
+#### 1. Course Detail / Landing Page
+
+* Each course must have its own detail page
+* Display:
+
+  * Course title
+  * Full description
+  * Price
+* Add a “Buy Course” button
+  (mock behavior only; no real payment integration required)
+
+---
+
+#### 2. Course Feedback Feature
+
+* Add a feedback section or a dedicated page per course
+* Users must be able to submit:
+
+  * Name (or anonymous)
+  * Rating (1–5)
+  * Comment
+* Newly submitted feedback must appear immediately in the UI
+
+---
+
+#### 3. UI & Visual Improvements (Mandatory)
+
+The improved application must be **visually cleaner and more polished** than the baseline.
+
+Minimum expectations:
+
+* Consistent layout, spacing, and typography across all pages
+* Reusable UI components where appropriate (e.g. course cards, buttons, sections)
+* Clear visual hierarchy (headings, content blocks, actions)
+* Basic responsive behavior:
+
+  * Usable on both desktop and mobile screen widths
+* The UI should look **intentionally designed**, not default or placeholder-level
+
+You are **not required to create a custom design system**, but the result must be clearly more aesthetically refined than the baseline.
+
+---
+
+## Constraints
+
+* Use React.js
+* Use React Router for navigation
+* Do not remove or break existing pages
+* No backend required (local state or mock data is sufficient)
+
+---
+
+## Deliverables
+
+You must submit:
+
+* Updated React source code based on the provided baseline
+* A **README.md** that includes:
+
+  * How to install dependencies
+  * How to run the project locally
+  * A short summary of the improvements you made
+* The README must be sufficient for a reviewer to run and verify the application
+
+---
+
+## Evaluation Criteria
+
+**Pass if:**
+
+* Improvements are clearly built on top of the baseline code
+* Course detail, purchase mock, and feedback features work correctly
+* UI is clearly more polished, consistent, and usable than the baseline
+* Code structure remains clear and maintainable
+* README allows the project to be run without guesswork
+
+**Fail if:**
+
+* Baseline functionality is broken
+* The application is rewritten instead of incrementally improved
+* UI remains essentially unchanged or visually careless
+* Features are described but not actually implemented
+* README is missing or insufficient
