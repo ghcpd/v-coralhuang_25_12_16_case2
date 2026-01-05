@@ -110,3 +110,39 @@ You must **add meaningful content** to all existing pages, not just adjust styli
 ### 4. UI & Visual Enhancements (Required)
 
 The improved application must be **visually polished and professional**, not just functional.
+
+Minimum UI expectations:
+
+* Consistent layout, spacing, and typography across **all pages**
+* Use a cohesive color scheme (e.g. consistent accent color for buttons and links)
+* Add shadows, rounded corners, and depth to cards and sections
+* Clear visual hierarchy using headings, spacing, and grouping
+* Buttons and interactive elements must be visually distinct
+* Add subtle hover effects and transitions where appropriate
+* Ensure a responsive layout that works on mobile and desktop screen sizes
+* All pages (Home, About, Courses, Contact, Course Detail) must be visually improved
+
+---
+
+## Constraints
+
+* Use React.js with React Router for navigation
+* You may split code into multiple components if it improves clarity and structure
+* Do not remove or break existing pages
+* No backend required; use local state and `localStorage` only
+* Focus on clean, readable, and maintainable code
+
+---
+
+## Deliverables
+
+You must submit:
+
+* Updated React source code with all improvements implemented
+* An enhanced `styles.css` (or equivalent) reflecting the new UI design
+* A **README.md** that includes:
+
+  * How to install dependencies
+  * How to run the project locally
+  * A clear summary of UI and feature improvements made
+  * A brief explanation of how the feedback system works
