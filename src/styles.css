@@ -6,6 +6,41 @@ body {
   background: #fff;
 }
 
+/* primary / secondary button styles */
+.primary {
+  background: #0366d6;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary:hover {
+  background: #0256b9;
+}
+
+.secondary {
+  background: #e7e7e7;
+  color: #222;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.secondary:hover {
+  background: #d0d0d0;
+}
+
 .app { min-height: 100vh; display: flex; flex-direction: column; }
 
 .container {
@@ -20,6 +55,87 @@ body {
   background: #fafafa;
   padding: 12px 0;
 }
+
+/* Hero and Benefit sections */
+.hero {
+  text-align: center;
+  padding: 48px 24px;
+  background: #f5f8fd;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+  color: #333;
+}
+
+.btn-hero { font-size: 1.1rem; }
+
+.benefits { margin-top: 36px; }
+.benefits h2 { text-align: center; margin-bottom: 24px; }
+
+.benefit-card {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 12px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.benefit-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Forms */
+.contact-form, .feedback-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.contact-form div, .feedback-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea,
+.feedback-form input, .feedback-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form textarea, .feedback-form textarea {
+  min-height: 80px;
+}
+
+.feedback { margin-top: 32px; }
+
+.feedback-form textarea { min-height: 100px; }
+
+.feedback-list { margin-top: 16px; }
+
+.feedback-item {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.feedback-header { margin-bottom: 6px; color: #0366d6; font-weight: 600; }
+.feedback-comment { margin: 0; color: #444; }
+
+.desc { font-size: 0.9rem; color: #555; margin-top: 8px; }
 
 .nav-inner {
   max-width: 960px;
@@ -70,6 +186,8 @@ p { line-height: 1.6; color: #444; }
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+.card .desc { margin-top: 8px; color: #666; }
 
 .card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
